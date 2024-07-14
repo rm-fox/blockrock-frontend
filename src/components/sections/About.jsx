@@ -23,7 +23,7 @@ const About = () => {
                   {/* You can customize the text below based on the risk level */}
                   <h3 className="font-bold">{index === 0 ? "HIGH RISK" : index === 1 ? "MEDIUM RISK" : "LOW RISK"}</h3>
                   <span className="text-xs">
-                    {index === 0 ? "ETH Yellow" : index === 1 ? "ETH ZOO" : "ETH OldButGold"}
+                    {index === 0 ? "ETF Yellow" : index === 1 ? "ETF ZOO" : "ETF OldButGold"}
                   </span>
                 </figcaption>
               </figure>
