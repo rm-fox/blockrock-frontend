@@ -1,13 +1,88 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+.swiper-pagination-bullet-active {
+  @apply bg-primary !important
+}
+img {
+  max-width: 50%; /* Limit the maximum width of the images to 100% of their container */
+  height: auto; /* Ensure the aspect ratio of the images is maintained */
+}
+.grid.gap-3 {
+  gap: 1rem; /* Adjust this value to set the desired gap size between the images */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.space-x-3 > * + * {
+  margin-left: 0.75rem; /* Adjust this value to set the desired gap size between the image figures */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-primary
+  }
+
+  img {
+    @apply select-none
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  section:not(:first-of-type):nth-of-type(odd) {
+    background-color: #fbfbfb;
+  }
+}
+
+@layer components {
+  .container {
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  @media (max-width: 639px) {
+    .container {
+      max-width: 100%;
+    }
+  }
+  @media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1200px;
+    }
+  }
+  .link-button {
+    @apply block py-2 px-4 bg-secondary w-fit font-semibold text-sm sm:py-3 sm:px-5 relative transition
+  }
+  .link-button:hover::before {
+    @apply translate-x-2 translate-y-2
+  }
+  .link-button:hover {
+    @apply -translate-x-2 -translate-y-2
+  }
+  .link-button::before {
+    @apply content-[''] absolute top-0 left-0 w-full h-full border-2 border-secondary transition
+  }
 }
