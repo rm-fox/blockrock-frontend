@@ -95,7 +95,7 @@ export const App = () => {
   return (
     <div className="App">
       <Hero />
-      {isConnected ? <About /> : null}
+      {isConnected ? <Execute /> : null}
       <About />
     </div>
   );
