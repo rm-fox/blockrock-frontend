@@ -9,7 +9,7 @@ const Hero = () => {
       <section>
         <Container className="flex flex-col lg:flex-row justify-between gap-10 items-center">
           <div className="flex-2 text-center lg:text-start">
-            <h1 className="text-4xl xl:text-5xl 2xl:text-6xl 2xl:leading-[1.2] xl:leading-[1.2] font-extrabold leading-[1.2] mb-4 xl:mb-8">
+            <h1 className="text-10xl xl:text-5xl 2xl:text-6xl 2xl:leading-[1.2] xl:leading-[1.2] font-extrabold leading-[1.2] mb-4 xl:mb-8">
               BlockRock
             </h1>
             <h1 className="text-xl font-bold mb-4">Thousands of coins   -   You only need one</h1>

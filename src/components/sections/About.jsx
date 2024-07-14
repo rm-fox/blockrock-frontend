@@ -10,7 +10,7 @@ const About = () => {
   return (
     <section id="about">
     <Container>
-      <SectionTitle title="Dynamic Risk Pools">
+      <SectionTitle  title="Dynamic Risk Pools">
         Currently trending dynamically adjusting risk pools
       </SectionTitle>
       <main className="flex flex-col gap-7 lg:flex-row justify-center items-center">
