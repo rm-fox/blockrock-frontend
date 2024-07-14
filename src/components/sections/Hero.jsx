@@ -2,6 +2,7 @@ import Container from "../utils/Container"
 import hero from '../../assets/shico-fotor-bg-remover-202407141444.png'
 import LinkButton from "../utils/LinkButton"
 import { MetaMaskButton } from "@metamask/sdk-react-ui";
+// import { ConnectButton } from "../../App";
 
 const Hero = () => {
   return (
@@ -21,7 +22,13 @@ const Hero = () => {
             </p>
             <div className="button-container">
                 
-                <LinkButton href="#contact" className="m-auto lg:m-0"><MetaMaskButton theme={"light"} color="white" />
+                <LinkButton href="#contact" className="m-auto lg:m-0">
+                  {/* <MetaMaskButton theme={"light"} color="white" /> */}
+                  {/* <w3m-button /> */}
+                  <w3m-connect-button />
+                  {/* <ConnectButton /> */}
+                  {/* <w3m-onramp-widget /> */}
+                  {/* <w3m-network-button /> */}
                     
                 </LinkButton>
             </div>
@@ -37,3 +44,5 @@ const Hero = () => {
 }
 
 export default Hero
+
+
