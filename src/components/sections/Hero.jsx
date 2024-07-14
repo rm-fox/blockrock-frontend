@@ -1,6 +1,7 @@
 import Container from "../utils/Container"
 import hero from '../../assets/shico-fotor-bg-remover-202407141444.png'
 import LinkButton from "../utils/LinkButton"
+import { MetaMaskButton } from "@metamask/sdk-react-ui";
 
 const Hero = () => {
   return (
@@ -18,8 +19,15 @@ const Hero = () => {
             <p className="leading-[2] mb-4 text-xs sm:text-sm sm:leading-[2]">
             Simplifying crypto investing by abstracting away the problem of portfolio management. Gain exposure to your risk tolerance via transparent ETFs, with easy login, transfer and no management fees. Broad exposure, simplified.
             </p>
+            <div className="button-container">
+                
+                <LinkButton href="#contact" className="m-auto lg:m-0"><MetaMaskButton theme={"light"} color="white" />
+                    
+                </LinkButton>
+            </div>
+            {/* <MetaMaskButton theme={"light"} color="white"></MetaMaskButton>
 
-            <LinkButton href="#contact" className="m-auto lg:m-0">Determine Your Portfolio</LinkButton>
+            <LinkButton href="#contact" className="m-auto lg:m-0">Determine Your Portfolio</LinkButton> */}
           </div>
           <img src={hero} alt="Hero" className="flex-1" />
         </Container>
