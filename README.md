@@ -1,12 +1,3 @@
-# Mint - A React Portfolio Website Template
-### [Live Preview](https://momenma7rous.github.io/Mint/)
-### Used Libraries
-  * [React](https://react.dev/)
-  * [SwiperJS](https://swiperjs.com/)
-  * [Tailwind CSS](https://tailwindcss.com/)
-  * [Font Awesome](https://fontawesome.com/)
+# BlockRock
 
-### UI
-![Image](https://graphberry-imgs.imgix.net/mint-minimal-portfolio-html-template.png?auto=compress,format&q=80&w=800)
-
-#### PSD From [GraphBerry](https://www.graphberry.com/)
+Simplifying crypto investing by abstracting away the problem of portfolio management. Gain exposure to your risk tolerance via transparent ETFs, with easy login, transfer and no management fees. Broad exposure, simplified.
